@@ -26,7 +26,7 @@ def datespan(startDate, endDate, delta=timedelta(days=1)):
 
 def get_hashes():
     hashes = []
-    for day in datespan(date(2016, 1, 1), date(2017, 1, 1)):
+    for day in datespan(date(2019, 11, 1), date(2019, 11, 19)):
         url = 'http://www.malshare.com/daily/{0}/malshare_fileList.{0}.txt'.format(day.strftime('%Y-%m-%d'))
         try:
             print "[*] Scraping malware hashes"
